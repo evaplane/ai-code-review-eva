@@ -1,0 +1,24 @@
+ai:
+  provider: openai
+  model: deepseek/deepseek-chat-v3-0324:free
+  apiKey: deepseek/deepseek-chat-v3-0324:free
+  baseUrl: https://openrouter.ai
+  temperature: 0.1
+  maxTokens: 4000
+platform:
+  type: github
+  token:
+  url: ""
+review:
+  prompts:
+    system: 你是一个代码审查助手，擅长识别代码中的问题并提供改进建议。审核报告最后需要加上审核平台来自：https://github.com/encode-studio-fe/ai-code-review
+      AI Code Reviewer 的 workflow工作流
+    review: "请审查此代码: {{filePath}}"
+    summary: 请总结代码审查结果
+  ignoreFiles:
+    - "*.lock"
+    - package-lock.json
+    - "*.min.js"
+  ignorePaths:
+    - node_modules/
+    - dist/
