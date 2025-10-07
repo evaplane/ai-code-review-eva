@@ -17,7 +17,7 @@ require('dotenv').config()
 // 解析命令行参数
 function parseArgs() {
   const args = process.argv.slice(2)
-  const params = { output: '.eva-review.yml' }
+  const params = { output: '.eva_review.yml' }
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--output' && i + 1 < args.length) {

@@ -7,7 +7,7 @@ ai:
   maxTokens: 4000
 platform:
   type: github
-  token: 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
+  token:
   url: ""
 review:
   prompts:
