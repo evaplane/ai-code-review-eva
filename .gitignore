@@ -10,7 +10,8 @@ logs
 node_modules
 temp
 .eslintcache
-.encode_review.yaml
-.encode_review.yaml,
-.encode_review.json,
-.encode_review.config.js
+.eva_review.yml
+.eva_review.yaml,
+.eva_review.json,
+.eva_review.config.js
+.env
